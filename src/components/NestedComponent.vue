@@ -1,7 +1,11 @@
+<script setup>
+const age = 21
+const occupation = 'Web Developer'
+const bio = 'I aim to be productive each day (except Sundays 😜).'
+</script>
+
 <template>
-  <h2>Nested Component</h2>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ab dolor officia quia maxime
-    suscipit consectetur, labore facilis neque vitae?
-  </p>
+  <p>{{ age }}</p>
+  <p>{{ occupation }}</p>
+  <p>{{ bio }}</p>
 </template>

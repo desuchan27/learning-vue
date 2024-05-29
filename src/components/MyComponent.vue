@@ -1,13 +1,14 @@
 <!-- JS -->
 <script setup>
 import NestedComponent from './NestedComponent.vue'
-console.log('Hello World')
+
+const name = 'Desu JS'
 </script>
 
 <!-- HTML  -->
 <template>
   <div>
-    <h1>Hello World</h1>
+    <h1>{{ name }}</h1>
     <NestedComponent />
   </div>
 </template>
@@ -17,6 +18,5 @@ console.log('Hello World')
 h1 {
   font-weight: 900;
   color: #999;
-  text-align: center;
 }
 </style>
