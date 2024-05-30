@@ -2,6 +2,7 @@
 import MyComponent from './components/MyComponent.vue'
 import CombinedStyle from './components/CombinedStyle.vue'
 import ModuleStyle from './components/ModuleStyle.vue'
+import MyEvent from './components/MyEvent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 </script>
@@ -11,6 +12,7 @@ import ModuleStyle from './components/ModuleStyle.vue'
   <MyComponent />
   <CombinedStyle />
   <ModuleStyle />
+  <MyEvent />
 </template>
 <style scoped>
 /* h1 {
