@@ -23,8 +23,9 @@ h1 {
   color: #999;
 }
 img {
-  width: 100%;
-  border-radius: 50%;
+  width: 95%;
+  border-radius: 1%;
   display: block;
+  /* margin-right: 1rem; */
 }
 </style>
