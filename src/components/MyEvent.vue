@@ -44,28 +44,14 @@ const submitHandler = (event) => {
 </script>
 
 <template>
-  <div class="eventButtons">
-    <form @:submit="submitHandler">
+  <form @:submit="submitHandler">
+    <div class="columns">
       <input v-model="inputValue" type="text" placeholder="Enter a number" class="global-box" />
-      <button @:click="increment" class="global-box increment-button">Increment</button>
-      <button @:click="decrement" class="global-box increment-button">Decrement</button>
-    </form>
-  </div>
+      <button @:click="increment" class="global-box increment-button">++</button>
+      <button @:click="decrement" class="global-box increment-button">--</button>
+    </div>
+  </form>
   <h1>Count: {{ count }}</h1>
 </template>
 
-<style>
-.eventButtons {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
-  width: 95%;
-}
-
-.increment-button {
-  border: 0;
-  background-color: hsl(160, 100%, 37%);
-  color: white;
-  font-size: 1.5rem;
-}
-</style>
+<style></style>
