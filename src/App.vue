@@ -1,7 +1,11 @@
 <script setup>
 import MyComponent from './components/MyComponent.vue'
+import GlobalStyle from './components/GlobalStyle.vue'
+import LocalStyle from './components/LocalStyle.vue'
 </script>
 <template>
+  <GlobalStyle />
+  <LocalStyle />
   <MyComponent />
 </template>
 <style scoped>

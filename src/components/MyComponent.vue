@@ -20,10 +20,10 @@ const imgInfo = {
 
 <!-- CSS  -->
 <style scoped>
-h1 {
+/* h1 {
   font-weight: 900;
   color: #999;
-}
+} */
 img {
   width: 95%;
   border-radius: 1%;
