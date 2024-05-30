@@ -4,6 +4,7 @@ import CombinedStyle from './components/CombinedStyle.vue'
 import ModuleStyle from './components/ModuleStyle.vue'
 import MyEvent from './components/MyEvent.vue'
 import MyReactiveComponent from './components/MyReactiveComponent.vue'
+import MyRefComponent from './components/MyRefComponent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 </script>
@@ -15,6 +16,7 @@ import MyReactiveComponent from './components/MyReactiveComponent.vue'
   <ModuleStyle />
   <MyEvent />
   <MyReactiveComponent />
+  <MyRefComponent />
 </template>
 <style scoped>
 /* h1 {
