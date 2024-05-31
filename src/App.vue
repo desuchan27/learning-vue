@@ -5,6 +5,7 @@ import ModuleStyle from './components/ModuleStyle.vue'
 import MyEvent from './components/MyEvent.vue'
 import MyReactiveComponent from './components/MyReactiveComponent.vue'
 import MyRefComponent from './components/MyRefComponent.vue'
+import IterationComponent from './components/IterationComponent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 </script>
@@ -17,6 +18,7 @@ import MyRefComponent from './components/MyRefComponent.vue'
   <MyEvent />
   <MyReactiveComponent />
   <MyRefComponent />
+  <IterationComponent />
 </template>
 <style scoped>
 /* h1 {
