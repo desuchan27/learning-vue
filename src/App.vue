@@ -12,6 +12,7 @@ import StaticPropsComponent from './components/StaticPropsComponent.vue'
 import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
 import ChangingPropsValue from './components/ChangingPropsValue.vue'
 import PropValidation from './components/PropValidation.vue'
+import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 
@@ -33,6 +34,10 @@ const lastName = ref('JS')
   <DynamicPropsComponent :firstName="firstName" :lastName="lastName" />
   <ChangingPropsValue />
   <PropValidation fullName="Desu Chan" :age="21" />
+  <ComplexPropsComponent
+    :friends="['Gon', 'Killua', 'Kurapika', 'Leorio']"
+    :userInfo="{ name: 'Desu', age: 20, location: ['Philippines'] }"
+  />
 </template>
 <style scoped>
 /* h1 {
