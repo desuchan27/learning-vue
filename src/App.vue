@@ -14,11 +14,13 @@ import ChangingPropsValue from './components/ChangingPropsValue.vue'
 import PropValidation from './components/PropValidation.vue'
 import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
 import CustomValidator from './components/CustomValidator.vue'
+import ComponentEvent from './components/ComponentEvent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 
 const firstName = ref('Desu')
 const lastName = ref('JS')
+const count = ref(0)
 </script>
 <template>
   <!-- <GlobalStyle />
@@ -40,6 +42,8 @@ const lastName = ref('JS')
     :userInfo="{ name: 'Desu', age: 21, location: ['Philippines'] }"
   />
   <CustomValidator name="Da Wei" age:20 password="real123456789" />
+  <h1>Count: {{ count }}</h1>
+  <ComponentEvent @incrementCounter="count++" />
 </template>
 <style scoped>
 /* h1 {
