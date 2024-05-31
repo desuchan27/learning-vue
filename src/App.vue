@@ -7,6 +7,7 @@ import MyReactiveComponent from './components/MyReactiveComponent.vue'
 import MyRefComponent from './components/MyRefComponent.vue'
 import IterationComponent from './components/IterationComponent.vue'
 import BindingComponent from './components/BindingComponent.vue'
+import StaticPropsComponent from './components/StaticPropsComponent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 </script>
@@ -21,6 +22,7 @@ import BindingComponent from './components/BindingComponent.vue'
   <MyRefComponent />
   <IterationComponent />
   <BindingComponent />
+  <StaticPropsComponent name="John Doe" />
 </template>
 <style scoped>
 /* h1 {
