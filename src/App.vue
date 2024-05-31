@@ -1,39 +1,50 @@
 <script setup>
-import { ref } from 'vue'
-import MyComponent from './components/MyComponent.vue'
-import CombinedStyle from './components/CombinedStyle.vue'
-import ModuleStyle from './components/ModuleStyle.vue'
-import MyEvent from './components/MyEvent.vue'
-import MyReactiveComponent from './components/MyReactiveComponent.vue'
-import MyRefComponent from './components/MyRefComponent.vue'
-import IterationComponent from './components/IterationComponent.vue'
-import BindingComponent from './components/BindingComponent.vue'
-import StaticPropsComponent from './components/StaticPropsComponent.vue'
-import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
-import ChangingPropsValue from './components/ChangingPropsValue.vue'
-import PropValidation from './components/PropValidation.vue'
-import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
-import CustomValidator from './components/CustomValidator.vue'
-import ComponentEvent from './components/ComponentEvent.vue'
-import FromComponent from './components/FromComponent.vue'
-import SlotComponent from './components/SlotComponent.vue'
-import FallbackComponent from './components/FallbackComponent.vue'
-import NamedSlot from './components/NamedSlot.vue'
-// import GlobalStyle from './components/GlobalStyle.vue'
+import GlobalStyle from './components/GlobalStyle.vue'
+// import { ref } from 'vue'
+// import MyComponent from './components/MyComponent.vue'
+// import CombinedStyle from './components/CombinedStyle.vue'
+// import ModuleStyle from './components/ModuleStyle.vue'
+// import MyEvent from './components/MyEvent.vue'
+// import MyReactiveComponent from './components/MyReactiveComponent.vue'
+// import MyRefComponent from './components/MyRefComponent.vue'
+// import IterationComponent from './components/IterationComponent.vue'
+// import BindingComponent from './components/BindingComponent.vue'
+// import StaticPropsComponent from './components/StaticPropsComponent.vue'
+// import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
+// import ChangingPropsValue from './components/ChangingPropsValue.vue'
+// import PropValidation from './components/PropValidation.vue'
+// import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
+// import CustomValidator from './components/CustomValidator.vue'
+// import ComponentEvent from './components/ComponentEvent.vue'
+// import FromComponent from './components/FromComponent.vue'
+// import SlotComponent from './components/SlotComponent.vue'
+// import FallbackComponent from './components/FallbackComponent.vue'
+// import NamedSlot from './components/NamedSlot.vue'
+import SchoolComponent from './components/SchoolComponent.vue'
+// import SchoolComponent from './components/SchoolComponent.vue'
 // import LocalStyle from './components/LocalStyle.vue'
+import { provide } from 'vue'
 
-const firstName = ref('Desu')
-const lastName = ref('JS')
-const count = ref(0)
+// const firstName = ref('Desu')
+// const lastName = ref('JS')
+// const count = ref(0)
 
-const formHandler = (username, email, password) => {
-  console.log(username, email, password)
-}
+// const formHandler = (username, email, password) => {
+//   console.log(username, email, password)
+// }
+
+// const studentName = 'Desu Chan'
+// const studentAge = 21
+// const studentLocation = 'Philippines'
+
+provide('studentName', 'Desu Chan')
+provide('studentAge', 21)
+provide('studentLocation', 'Philippines')
 </script>
 <template>
   <!-- <GlobalStyle />
   <LocalStyle /> -->
-  <MyComponent />
+  <!-- <MyComponent />
   <CombinedStyle />
   <ModuleStyle />
   <MyEvent />
@@ -65,7 +76,10 @@ const formHandler = (username, email, password) => {
     <template #two>
       <h2>Content Slot 2</h2>
     </template>
-  </NamedSlot>
+  </NamedSlot> -->
+  <GlobalStyle>
+    <SchoolComponent />
+  </GlobalStyle>
 </template>
 <style scoped>
 /* h1 {``````````````````````````

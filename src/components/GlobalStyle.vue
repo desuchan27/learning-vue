@@ -1,6 +1,5 @@
 <template>
-  <h1 class="text-red">Global Styling</h1>
-  <p class="local">Trying local scope in this component</p>
+  <slot> </slot>
 </template>
 
 <style>
@@ -24,6 +23,14 @@
 
 .rows {
   display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 95%;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
   width: 95%;
