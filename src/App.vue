@@ -16,6 +16,9 @@ import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
 import CustomValidator from './components/CustomValidator.vue'
 import ComponentEvent from './components/ComponentEvent.vue'
 import FromComponent from './components/FromComponent.vue'
+import SlotComponent from './components/SlotComponent.vue'
+import FallbackComponent from './components/FallbackComponent.vue'
+import NamedSlot from './components/NamedSlot.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 
@@ -50,9 +53,22 @@ const formHandler = (username, email, password) => {
   <h1>Count: {{ count }}</h1>
   <ComponentEvent @incrementCounter="count++" />
   <FromComponent @userInfo="formHandler" />
+  <SlotComponent>
+    <h2>Content 1</h2>
+    <h2>Content 2</h2>
+  </SlotComponent>
+  <FallbackComponent> </FallbackComponent>
+  <NamedSlot>
+    <template #one>
+      <h2>Content Slot 1</h2>
+    </template>
+    <template #two>
+      <h2>Content Slot 2</h2>
+    </template>
+  </NamedSlot>
 </template>
 <style scoped>
-/* h1 {
+/* h1 {``````````````````````````
   font-weight: 900;
   color: #999;
   text-align: center;
