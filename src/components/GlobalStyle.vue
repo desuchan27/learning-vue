@@ -22,7 +22,7 @@
   font-size: 1.5rem;
 }
 
-.columns {
+.rows {
   display: flex;
   justify-content: space-around;
   gap: 1rem;

@@ -6,6 +6,7 @@ import MyEvent from './components/MyEvent.vue'
 import MyReactiveComponent from './components/MyReactiveComponent.vue'
 import MyRefComponent from './components/MyRefComponent.vue'
 import IterationComponent from './components/IterationComponent.vue'
+import BindingComponent from './components/BindingComponent.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 </script>
@@ -19,6 +20,7 @@ import IterationComponent from './components/IterationComponent.vue'
   <MyReactiveComponent />
   <MyRefComponent />
   <IterationComponent />
+  <BindingComponent />
 </template>
 <style scoped>
 /* h1 {

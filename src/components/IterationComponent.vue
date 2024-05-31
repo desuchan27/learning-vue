@@ -9,7 +9,7 @@ const people = ref([
 </script>
 
 <template>
-  <div class="columns global-box">
+  <div class="rows global-box">
     <p v-for="(person, index) in people" :key="index">
       {{ person.name }} is {{ person.age }} years old
     </p>

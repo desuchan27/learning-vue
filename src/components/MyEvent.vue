@@ -45,7 +45,7 @@ const submitHandler = (event) => {
 
 <template>
   <form @:submit="submitHandler">
-    <div class="columns">
+    <div class="rows">
       <input v-model="inputValue" type="text" placeholder="Enter a number" class="global-box" />
       <button @:click="increment" class="global-box increment-button">++</button>
       <button @:click="decrement" class="global-box increment-button">--</button>
