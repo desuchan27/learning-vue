@@ -13,6 +13,7 @@ import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
 import ChangingPropsValue from './components/ChangingPropsValue.vue'
 import PropValidation from './components/PropValidation.vue'
 import ComplexPropsComponent from './components/ComplexPropsComponent.vue'
+import CustomValidator from './components/CustomValidator.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 
@@ -36,8 +37,9 @@ const lastName = ref('JS')
   <PropValidation fullName="Desu Chan" :age="21" />
   <ComplexPropsComponent
     :friends="['Gon', 'Killua', 'Kurapika', 'Leorio']"
-    :userInfo="{ name: 'Desu', age: 20, location: ['Philippines'] }"
+    :userInfo="{ name: 'Desu', age: 21, location: ['Philippines'] }"
   />
+  <CustomValidator name="Da Wei" age:20 password="real123456789" />
 </template>
 <style scoped>
 /* h1 {
