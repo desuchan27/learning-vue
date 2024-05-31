@@ -3,6 +3,10 @@
 </template>
 
 <style>
+.text-center {
+  text-align: center;
+}
+
 .text-red {
   color: red;
 }
@@ -14,7 +18,7 @@
   border-radius: 5px;
 }
 
-.increment-button {
+.global-button {
   border: 0;
   background-color: hsl(160, 100%, 37%);
   color: white;
@@ -26,6 +30,14 @@
   justify-content: space-around;
   gap: 1rem;
   width: 95%;
+}
+
+.space-x {
+  margin-right: 1rem;
+}
+
+.space-y {
+  margin-bottom: 1rem;
 }
 
 .columns {

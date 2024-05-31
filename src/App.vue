@@ -1,6 +1,6 @@
 <script setup>
 import GlobalStyle from './components/GlobalStyle.vue'
-// import { ref } from 'vue'
+import { ref } from 'vue'
 // import MyComponent from './components/MyComponent.vue'
 // import CombinedStyle from './components/CombinedStyle.vue'
 // import ModuleStyle from './components/ModuleStyle.vue'
@@ -20,9 +20,10 @@ import GlobalStyle from './components/GlobalStyle.vue'
 // import SlotComponent from './components/SlotComponent.vue'
 // import FallbackComponent from './components/FallbackComponent.vue'
 // import NamedSlot from './components/NamedSlot.vue'
-import SchoolComponent from './components/SchoolComponent.vue'
+// import SchoolComponent from './components/SchoolComponent.vue'
 // import SchoolComponent from './components/SchoolComponent.vue'
 // import LocalStyle from './components/LocalStyle.vue'
+import LifeCycleComponent from './components/LifeCycleComponent.vue'
 import { provide } from 'vue'
 
 // const firstName = ref('Desu')
@@ -40,11 +41,14 @@ import { provide } from 'vue'
 provide('studentName', 'Desu Chan')
 provide('studentAge', 21)
 provide('studentLocation', 'Philippines')
+
+const showHide = ref(true)
 </script>
 <template>
-  <!-- <GlobalStyle />
+  <GlobalStyle>
+    <!-- <GlobalStyle />
   <LocalStyle /> -->
-  <!-- <MyComponent />
+    <!-- <MyComponent />
   <CombinedStyle />
   <ModuleStyle />
   <MyEvent />
@@ -77,8 +81,9 @@ provide('studentLocation', 'Philippines')
       <h2>Content Slot 2</h2>
     </template>
   </NamedSlot> -->
-  <GlobalStyle>
-    <SchoolComponent />
+    <!-- <SchoolComponent /> -->
+    <LifeCycleComponent v-if="showHide" />
+    <button @click="showHide = !showHide">Toggle</button>
   </GlobalStyle>
 </template>
 <style scoped>
