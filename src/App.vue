@@ -10,6 +10,8 @@ import IterationComponent from './components/IterationComponent.vue'
 import BindingComponent from './components/BindingComponent.vue'
 import StaticPropsComponent from './components/StaticPropsComponent.vue'
 import DynamicPropsComponent from './components/DynamicPropsComponent.vue'
+import ChangingPropsValue from './components/ChangingPropsValue.vue'
+import PropValidation from './components/PropValidation.vue'
 // import GlobalStyle from './components/GlobalStyle.vue'
 // import LocalStyle from './components/LocalStyle.vue'
 
@@ -29,6 +31,8 @@ const lastName = ref('JS')
   <BindingComponent />
   <StaticPropsComponent name="John Doe" />
   <DynamicPropsComponent :firstName="firstName" :lastName="lastName" />
+  <ChangingPropsValue />
+  <PropValidation fullName="Desu Chan" :age="21" />
 </template>
 <style scoped>
 /* h1 {
