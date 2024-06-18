@@ -1,8 +1,9 @@
 <script setup>
 import GlobalStyle from './components/GlobalStyle.vue'
 import { ref } from 'vue'
-import CounterComponentAlso from './components/CounterComponentAlso.vue'
-import CounterComponent from './components/CounterComponent.vue'
+import DComponent from './components/DComponent.vue'
+// import CounterComponentAlso from './components/CounterComponentAlso.vue'
+// import CounterComponent from './components/CounterComponent.vue'
 // import FriendsToggle from './components/FriendsToggle.vue'
 // import RefComponent from './components/RefComponent.vue'
 // import BasicRef from './components/RefBasic.vue';
@@ -98,8 +99,9 @@ provide('studentLocation', 'Philippines')
     <!-- <RefFunction /> -->
     <!-- <RefComponent /> -->
     <!-- <FriendsToggle /> -->
-    <CounterComponent />
-    <CounterComponentAlso />
+    <!-- <CounterComponent />
+    <CounterComponentAlso /> -->
+    <DComponent />
   </GlobalStyle>
 </template>
 <style scoped>
